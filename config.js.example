@@ -1,0 +1,13 @@
+var config = function(){
+    var irc_conf = function(){
+        this.server = 'irc.freenode.net';
+        this.channel = '#channel';
+        this.bot_nick = 'BOT_NAME';
+        this.bot_pwd = 'BOT_PWD';
+        this.ws_port = 3001;
+    };
+
+    this.irc = new irc_conf();
+};
+
+module.exports = new config();
